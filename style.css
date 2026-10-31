@@ -1,0 +1,230 @@
+
+/* =========================
+   1. Global styles
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #0c415e;
+    --primary-dark: #35444a;
+    --background: #F7F8F5;
+    --surface: #FFFFFF;
+    --text: #2d363e;
+    --muted: #78827A;
+    --border: #E5EAE4;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* =========================
+   2. Main container
+========================= */
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 45px 24px 25px;
+}
+
+/* =========================
+   3. Header
+========================= */
+
+.header {
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.logo-placeholder {
+    width: 115px;
+    height: 75px;
+    margin: 0 auto 22px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--surface);
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.header h1 {
+    font-size: 29px;
+    font-weight: 600;
+    letter-spacing: -0.8px;
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.welcome {
+    margin-top: 20px;
+    font-size: 15px;
+    color: var(--primary);
+}
+
+/* =========================
+   4. Links
+========================= */
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.link-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 20px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.25s ease;
+}
+
+.link-card:hover {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    transform: translateY(-2px);
+}
+
+/* =========================
+   5. Information section
+========================= */
+
+.information {
+    margin-top: 42px;
+    padding: 24px 20px;
+    background: var(--surface);
+    border-radius: 14px;
+    border: 1px solid var(--border);
+}
+
+.information h2 {
+    font-size: 17px;
+    margin-bottom: 22px;
+}
+
+.info-item {
+    margin-bottom: 17px;
+}
+
+.info-item:last-child {
+    margin-bottom: 0;
+}
+
+.info-item h3 {
+    font-size: 12px;
+    color: var(--primary);
+    margin-bottom: 3px;
+}
+
+.info-item p {
+    font-size: 13px;
+    color: var(--muted);
+}
+
+/* =========================
+   6. Footer
+========================= */
+
+footer {
+    text-align: center;
+    margin-top: 35px;
+    color: var(--muted);
+    font-size: 11px;
+}
+
+footer p:first-child {
+    margin-bottom: 5px;
+}
+
+/* =========================
+   7. Mobile adjustments
+========================= */
+
+@media (max-width: 360px) {
+    .container {
+        padding: 30px 17px 20px;
+    }
+
+    .header h1 {
+        font-size: 25px;
+    }
+}
+.logo {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto 22px;
+    display: block;
+}
+
+/* Link icons */
+
+.link-content {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.link-icon {
+    width: 21px;
+    height: 21px;
+    fill: none;
+    stroke: var(--primary);
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    flex-shrink: 0;
+}
+
+.arrow {
+    font-size: 18px;
+    color: var(--primary);
+    transition: transform 0.25s ease;
+}
+
+.link-card:hover .link-icon,
+.link-card:hover .arrow {
+    color: white;
+    stroke: white;
+}
+
+.link-card:hover .arrow {
+    transform: translate(3px, -3px);
+}
+:root {
+    --primary: #4785C5;
+    --primary-dark: #326BA8;
+    --background: #F7F8FA;
+    --surface: #FFFFFF;
+    --text: #283746;
+    --muted: #788797;
+    --border: #E3EAF1;
+}
